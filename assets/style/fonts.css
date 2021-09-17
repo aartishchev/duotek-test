@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 300;
+  font-style: normal;
+  font-display: optional;
+  src: local('Rubik'), url('@/assets/fonts/Rubik-Light.woff2') format('woff2'),
+    url('@/assets/fonts/Rubik-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+  src: local('Rubik'), url('@/assets/fonts/Rubik-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+  src: local('IBM Plex Sans'),
+    url('@/assets/fonts/IBMPlexSans-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/IBMPlexSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: normal;
+  font-display: optional;
+  src: local('Railway'),
+    url('@/assets/fonts/Raleway-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/Raleway-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: normal;
+  font-display: optional;
+  src: local('Railway'),
+    url('@/assets/fonts/Raleway-SemiBold.woff2') format('woff2'),
+    url('@/assets/fonts/Raleway-SemiBold.woff') format('woff');
+}

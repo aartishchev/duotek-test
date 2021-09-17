@@ -1,0 +1,30 @@
+@mixin centering-layout {
+  max-width: 1200px;
+  padding: 0 36px;
+  margin: 0 auto;
+}
+
+@mixin text-small {
+  font-size: 14px;
+  line-height: normal;
+}
+
+@mixin text-base {
+  font-size: 16px;
+  line-height: 1;
+}
+
+@mixin text-large {
+  font-size: 18px;
+  line-height: normal;
+}
+
+@mixin text-xl {
+  font-size: 24px;
+  line-height: normal;
+}
+
+@mixin text-2xl {
+  font-size: 36px;
+  line-height: 1.3;
+}
