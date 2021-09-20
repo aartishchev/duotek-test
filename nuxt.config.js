@@ -23,6 +23,7 @@ export default {
   css: [
     '@/assets/style/fonts.css',
     '@/assets/style/reset.css',
+    '@/assets/style/layout.css',
     '@/assets/style/palette.css',
     '@/assets/style/layout.scss'
   ],

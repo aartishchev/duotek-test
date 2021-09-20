@@ -24,3 +24,8 @@ button,
 select {
   font-family: inherit;
 }
+
+button {
+  border: none;
+  background: none;
+}

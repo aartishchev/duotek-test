@@ -16,10 +16,17 @@
       </div>
     </header>
 
-    <main class="main-block">
+    <main class="companies__page">
+      <h1 class="companies__heading">Каталог компаний</h1>
       <section>
-        <h1 class="companies__heading">Каталог компаний</h1>
-        <input type="search" placeholder="Поиск продукта или отрасли" />
+        <div class="companies__input-wrapper">
+          <input
+            class="companies__search-input"
+            type="search"
+            placeholder="Поиск продукта или отрасли"
+          />
+          <button class="companies__search-button">Найти</button>
+        </div>
       </section>
     </main>
   </div>
@@ -38,9 +45,9 @@ export default {}
 
 .header {
   height: 96px;
-  border-bottom: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--gray-242);
   box-sizing: border-box;
-  font-family: 'Rubik', 'Arial', sans-serif;
+  font-family: var(--font-rubik);
 }
 
 .header__wrapper {
@@ -59,12 +66,12 @@ export default {}
 
 .header__nav-item,
 .header__login {
-  @include text-base;
   color: var(--blue-primary);
   padding: 8px;
+  transition: var(--opacity-transition);
 
   &:hover {
-    opacity: 30%;
+    opacity: var(--on-hover-opacity);
   }
 }
 
@@ -72,15 +79,69 @@ export default {}
   justify-self: end;
 }
 
-.main-block {
+.companies__page {
   @include centering-layout;
   padding-top: 75px;
 }
 
 .companies__heading {
-  @include text-2xl;
-  font-family: 'Raleway', 'Arial', sans-serif;
+  font-family: var(--font-raleway);
+  font-size: var(--text-2xl);
+  line-height: 1.3;
   font-weight: 600;
   letter-spacing: 0.12px;
+  margin-bottom: 18px;
+}
+
+.companies__input-wrapper {
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('@/assets/images/search-icon.svg');
+    top: 7px;
+    left: 11px;
+  }
+}
+
+.companies__search-input {
+  font-family: var(--font-raleway);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 7px 8px 7px 0;
+  border: 1px solid var(--gray-229);
+  width: 100%;
+  border-top-left-radius: var(--radius-primary);
+  border-bottom-left-radius: var(--radius-primary);
+  padding-left: 43px;
+  outline: none;
+
+  &::placeholder {
+    color: var(--gray-128);
+  }
+
+  &:focus {
+    border-color: var(--blue-primary);
+  }
+}
+
+.companies__search-button {
+  font-family: var(--font-rubik);
+  font-size: var(--text-small);
+  padding: 0 18px;
+  background-color: var(--blue-primary);
+  color: white;
+  border-top-right-radius: var(--radius-primary);
+  border-bottom-right-radius: var(--radius-primary);
+  transition: var(--opacity-transition);
+
+  &:hover {
+    opacity: var(--on-hover-opacity);
+  }
 }
 </style>

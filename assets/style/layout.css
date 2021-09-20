@@ -1,0 +1,12 @@
+:root {
+  --text-small: 14px;
+  --text-base: 16px;
+  --text-large: 18px;
+  --text-xl: 24px;
+  --text-2xl: 36px;
+  --font-rubik: 'Rubik', 'Arial', sans-serif;
+  --font-raleway: 'Raleway', 'Arial', sans-serif;
+  --radius-primary: 4px;
+  --on-hover-opacity: 0.3;
+  --opacity-transition: opacity 0.3s ease;
+}
