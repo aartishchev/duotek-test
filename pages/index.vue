@@ -5,18 +5,14 @@
 </template>
 
 <style lang="scss">
-@import '@/assets/style/layout.scss';
+@import '@/assets/style/mixins.scss';
 
 .home__page {
   @include centering-layout;
-  padding-top: 75px;
+  @include page-positioning;
 }
 
 .home__heading {
-  font-family: var(--font-raleway);
-  font-size: var(--text-2xl);
-  line-height: 1.3;
-  font-weight: 600;
-  letter-spacing: 0.12px;
+  @include page-heading;
 }
 </style>

@@ -9,26 +9,26 @@
 
       <nav>
         <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <NuxtLink to="/tenders">Тендеры</NuxtLink>
+          <li>
+            <NuxtLink to="/tenders" class="header__nav-link">Тендеры</NuxtLink>
           </li>
-          <li class="header__nav-item">
-            <NuxtLink to="/companies">Компании</NuxtLink>
+          <li>
+            <NuxtLink to="/companies" class="header__nav-link">Компании</NuxtLink>
           </li>
-          <li class="header__nav-item">
-            <NuxtLink to="/products">Продукты</NuxtLink>
+          <li>
+            <NuxtLink to="/products" class="header__nav-link">Продукты</NuxtLink>
           </li>
-          <li class="header__nav-item">
-            <NuxtLink to="/cases">Кейсы</NuxtLink>
+          <li>
+            <NuxtLink to="/cases" class="header__nav-link">Кейсы</NuxtLink>
           </li>
-          <li class="header__nav-item">
-            <NuxtLink to="/blog">Блог</NuxtLink>
+          <li>
+            <NuxtLink to="/blog" class="header__nav-link">Блог</NuxtLink>
           </li>
         </ul>
       </nav>
 
       <p class="header__login">
-        <NuxtLink to="/login">Вход и регистрация</NuxtLink>
+        <NuxtLink to="/login" class="header__nav-link">Вход и регистрация</NuxtLink>
       </p>
     </div>
   </header>
@@ -39,7 +39,7 @@ export default {}
 </script>
 
 <style lang="scss">
-@import '@/assets/style/layout.scss';
+@import '@/assets/style/mixins.scss';
 
 .header {
   height: 96px;
@@ -62,8 +62,7 @@ export default {}
   column-gap: 26px;
 }
 
-.header__nav-item,
-.header__login {
+.header__nav-link {
   color: var(--blue-primary);
   padding: 8px;
   transition: var(--opacity-transition);

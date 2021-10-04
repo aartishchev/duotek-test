@@ -25,7 +25,7 @@ export default {
     '@/assets/style/reset.css',
     '@/assets/style/layout.css',
     '@/assets/style/palette.css',
-    '@/assets/style/layout.scss'
+    '@/assets/style/mixins.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
