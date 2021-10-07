@@ -1,0 +1,445 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "ident": "duotek",
+      "title": "Duotek",
+      "description_short": "Сложные интернет-проекты. Проектируем. Разрабатываем. Обслуживаем.",
+      "description_full": "Собственное подмножество создает интеграл от функции, обращающейся в бесконечность в изолированной точке. Степенной ряд развивает ряд Тейлора. Линейное программирование, не вдаваясь в подробности, стабилизирует возрастающий интеграл Фурье. Постоянная величина нейтрализует невероятный критерий интегрируемости.",
+      "url": "http://duotek.ru",
+      "contact_email": "info@duotek.ru",
+      "contact_phone": "74952151385",
+      "contact_telegram": "duotek",
+      "contact_whatsapp": null,
+      "contact_skype": "duotek",
+      "staff": 33,
+      "age": 21,
+      "city_id": 3,
+      "city": {
+        "id": 3,
+        "ident": "lesozavodsk",
+        "title": "Лесозаводск",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 1,
+          "ident": "build",
+          "title": "Стройматериалы",
+          "icon": "build",
+          "industry_group_id": 2
+        },
+        {
+          "id": 2,
+          "ident": "project",
+          "title": "Проектирование",
+          "icon": "project",
+          "industry_group_id": 2
+        }
+      ],
+      "companySpecializations": [
+        {
+          "id": 1,
+          "ident": "int-soft",
+          "title": "Интеграция ПО",
+          "icon": "dev",
+          "company_specialization_group_id": 1
+        },
+        {
+          "id": 2,
+          "ident": "int-neuro",
+          "title": "Интеграция Нейроимплантов",
+          "icon": "soft",
+          "company_specialization_group_id": 1
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 2,
+      "ident": "super-company-2",
+      "title": "Рога и Копыта",
+      "description_short": "Вектор концентрирует возрастающий интеграл Фурье.",
+      "description_full": "График функции многих переменных охватывает функциональный анализ, что и требовалось доказать. Линейное уравнение, как следует из вышесказанного, синхронизирует контрпример, при этом, вместо 13 можно взять любую другую константу. Криволинейный интеграл, общеизвестно, нетривиален. Детерминант накладывает аксиоматичный интеграл Фурье. Число е позитивно соответствует нормальный бином Ньютона. Доказательство решительно позиционирует неопровержимый разрыв функции.",
+      "url": "http://alpha.duotek.ru",
+      "contact_email": "info1@duotek.ru",
+      "contact_phone": "74952151385",
+      "contact_telegram": "duotek1",
+      "contact_whatsapp": null,
+      "contact_skype": "duotek11",
+      "staff": 11,
+      "age": 12,
+      "city_id": 2,
+      "city": {
+        "id": 2,
+        "ident": "voronej",
+        "title": "Воронеж",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 3,
+          "ident": "rest",
+          "title": "Ресторан",
+          "icon": "rest",
+          "industry_group_id": 1
+        }
+      ],
+      "companySpecializations": [
+        {
+          "id": 3,
+          "ident": "dev-soft",
+          "title": "Разработка ПО",
+          "icon": "soft",
+          "company_specialization_group_id": 2
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 3,
+      "ident": "super-company-3",
+      "title": "Kirin Tor",
+      "description_short": "Аксиома упорядочивает стремящийся критерий интегрируемости, что известно даже школьникам.",
+      "description_full": "Согласно предыдущему, многочлен оправдывает отрицательный интеграл от функции, обращающейся в бесконечность вдоль линии. Скачок функции синхронизирует контрпример, что несомненно приведет нас к истине. Векторное поле категорически специфицирует линейно зависимый контрпример. Бином Ньютона переворачивает математический анализ. Надо сказать, что абсолютно сходящийся ряд последовательно создает критерий интегрируемости.",
+      "url": "http://beta.duotek.ru",
+      "contact_email": "info2@duotek.ru",
+      "contact_phone": "74952151385",
+      "contact_telegram": "duotek2",
+      "contact_whatsapp": null,
+      "contact_skype": "duotek22",
+      "staff": 22,
+      "age": 1200,
+      "city_id": 1,
+      "city": {
+        "id": 1,
+        "ident": "moskva",
+        "title": "Москва",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 4,
+          "ident": "bar",
+          "title": "Кафе-бар",
+          "icon": "bar",
+          "industry_group_id": 1
+        }
+      ],
+      "companySpecializations": [
+        {
+          "id": 4,
+          "ident": "dev-dev",
+          "title": "Разработка Месторождений",
+          "icon": "dev",
+          "company_specialization_group_id": 2
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 4,
+      "ident": "super-company-4",
+      "title": "Lakon Spaceways",
+      "description_short": "В соответствии с законом больших чисел, арифметическая прогрессия положительна. ",
+      "description_full": "Натуральный логарифм выведен. В соответствии с законом больших чисел, арифметическая прогрессия положительна. Неравенство Бернулли концентрирует возрастающий тройной интеграл. Наряду с этим, умножение двух векторов (векторное) необходимо и достаточно.",
+      "url": "http://gamma.duotek.ru",
+      "contact_email": "info3@duotek.ru",
+      "contact_phone": null,
+      "contact_telegram": "duotek3",
+      "contact_whatsapp": null,
+      "contact_skype": "duotek33",
+      "staff": 44,
+      "age": 32,
+      "city_id": 4,
+      "city": {
+        "id": 4,
+        "ident": "saint-tropez",
+        "title": "Saint-Tropez",
+        "country_id": 3
+      },
+      "country_id": 3,
+      "country": { "id": 3, "ident": "fr", "title": "Франция" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 5,
+          "ident": "aqua",
+          "title": "Аквадискотека",
+          "icon": "aqua",
+          "industry_group_id": 1
+        },
+        {
+          "id": 1,
+          "ident": "build",
+          "title": "Стройматериалы",
+          "icon": "build",
+          "industry_group_id": 2
+        }
+      ],
+      "companySpecializations": [
+        {
+          "id": 2,
+          "ident": "int-neuro",
+          "title": "Интеграция Нейроимплантов",
+          "icon": "soft",
+          "company_specialization_group_id": 1
+        },
+        {
+          "id": 4,
+          "ident": "dev-dev",
+          "title": "Разработка Месторождений",
+          "icon": "dev",
+          "company_specialization_group_id": 2
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 5,
+      "ident": "super-company-5",
+      "title": "Ромашка",
+      "description_short": "Вектор концентрирует возрастающий интеграл Фурье.",
+      "description_full": "График функции многих переменных охватывает функциональный анализ, что и требовалось доказать. Линейное уравнение, как следует из вышесказанного, синхронизирует контрпример, при этом, вместо 13 можно взять любую другую константу. Криволинейный интеграл, общеизвестно, нетривиален. Детерминант накладывает аксиоматичный интеграл Фурье. Число е позитивно соответствует нормальный бином Ньютона. Доказательство решительно позиционирует неопровержимый разрыв функции.",
+      "url": "http://alpha.duotek.ru",
+      "contact_email": "info1@duotek.ru",
+      "contact_phone": "74952151385",
+      "contact_telegram": null,
+      "contact_whatsapp": null,
+      "contact_skype": null,
+      "staff": 55,
+      "age": 34,
+      "city_id": 2,
+      "city": {
+        "id": 2,
+        "ident": "voronej",
+        "title": "Воронеж",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [],
+      "companySpecializations": [],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 6,
+      "ident": "super-company-6",
+      "title": "НЛМК",
+      "description_short": "Аксиома упорядочивает стремящийся критерий интегрируемости, что известно даже школьникам.",
+      "description_full": "Согласно предыдущему, многочлен оправдывает отрицательный интеграл от функции, обращающейся в бесконечность вдоль линии. Скачок функции синхронизирует контрпример, что несомненно приведет нас к истине. Векторное поле категорически специфицирует линейно зависимый контрпример. Бином Ньютона переворачивает математический анализ. Надо сказать, что абсолютно сходящийся ряд последовательно создает критерий интегрируемости.",
+      "url": "http://beta.duotek.ru",
+      "contact_email": "info2@duotek.ru",
+      "contact_phone": null,
+      "contact_telegram": null,
+      "contact_whatsapp": null,
+      "contact_skype": "duotek22",
+      "staff": 22,
+      "age": 45,
+      "city_id": 1,
+      "city": {
+        "id": 1,
+        "ident": "moskva",
+        "title": "Москва",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 2,
+          "ident": "project",
+          "title": "Проектирование",
+          "icon": "project",
+          "industry_group_id": 2
+        }
+      ],
+      "companySpecializations": [],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 7,
+      "ident": "super-company-7",
+      "title": "Gutamaya",
+      "description_short": "Вектор концентрирует возрастающий интеграл Фурье.",
+      "description_full": "График функции многих переменных охватывает функциональный анализ, что и требовалось доказать. Линейное уравнение, как следует из вышесказанного, синхронизирует контрпример, при этом, вместо 13 можно взять любую другую константу. Криволинейный интеграл, общеизвестно, нетривиален. Детерминант накладывает аксиоматичный интеграл Фурье. Число е позитивно соответствует нормальный бином Ньютона. Доказательство решительно позиционирует неопровержимый разрыв функции.",
+      "url": "http://gamma.duotek.ru",
+      "contact_email": "info3@duotek.ru",
+      "contact_phone": "74952151385",
+      "contact_telegram": null,
+      "contact_whatsapp": null,
+      "contact_skype": null,
+      "staff": 33,
+      "age": 21,
+      "city_id": 3,
+      "city": {
+        "id": 3,
+        "ident": "lesozavodsk",
+        "title": "Лесозаводск",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [],
+      "companySpecializations": [
+        {
+          "id": 2,
+          "ident": "int-neuro",
+          "title": "Интеграция Нейроимплантов",
+          "icon": "soft",
+          "company_specialization_group_id": 1
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 8,
+      "ident": "super-company-8",
+      "title": "Cenarion Circle",
+      "description_short": "Вектор концентрирует возрастающий интеграл Фурье.",
+      "description_full": "Натуральный логарифм выведен. В соответствии с законом больших чисел, арифметическая прогрессия положительна. Неравенство Бернулли концентрирует возрастающий тройной интеграл. Наряду с этим, умножение двух векторов (векторное) необходимо и достаточно.",
+      "url": "http://alpha.duotek.ru",
+      "contact_email": "info1@duotek.ru",
+      "contact_phone": null,
+      "contact_telegram": "duotek3",
+      "contact_whatsapp": null,
+      "contact_skype": null,
+      "staff": 44,
+      "age": 23,
+      "city_id": 2,
+      "city": {
+        "id": 2,
+        "ident": "voronej",
+        "title": "Воронеж",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 3,
+          "ident": "rest",
+          "title": "Ресторан",
+          "icon": "rest",
+          "industry_group_id": 1
+        }
+      ],
+      "companySpecializations": [
+        {
+          "id": 3,
+          "ident": "dev-soft",
+          "title": "Разработка ПО",
+          "icon": "soft",
+          "company_specialization_group_id": 2
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 9,
+      "ident": "super-company-9",
+      "title": "Quadrotek",
+      "description_short": "Аксиома упорядочивает стремящийся критерий интегрируемости, что известно даже школьникам.",
+      "description_full": "Согласно предыдущему, многочлен оправдывает отрицательный интеграл от функции, обращающейся в бесконечность вдоль линии. Скачок функции синхронизирует контрпример, что несомненно приведет нас к истине. Векторное поле категорически специфицирует линейно зависимый контрпример. Бином Ньютона переворачивает математический анализ. Надо сказать, что абсолютно сходящийся ряд последовательно создает критерий интегрируемости.",
+      "url": "http://beta.duotek.ru",
+      "contact_email": "info2@duotek.ru",
+      "contact_phone": "74952151385",
+      "contact_telegram": null,
+      "contact_whatsapp": null,
+      "contact_skype": "duotek22",
+      "staff": 33,
+      "age": 12,
+      "city_id": 3,
+      "city": {
+        "id": 3,
+        "ident": "lesozavodsk",
+        "title": "Лесозаводск",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [
+        {
+          "id": 4,
+          "ident": "bar",
+          "title": "Кафе-бар",
+          "icon": "bar",
+          "industry_group_id": 1
+        }
+      ],
+      "companySpecializations": [],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    },
+    {
+      "id": 10,
+      "ident": "super-company-10",
+      "title": "Северсталь",
+      "description_short": "Вектор концентрирует возрастающий интеграл Фурье.",
+      "description_full": "График функции многих переменных охватывает функциональный анализ, что и требовалось доказать. Линейное уравнение, как следует из вышесказанного, синхронизирует контрпример, при этом, вместо 13 можно взять любую другую константу. Криволинейный интеграл, общеизвестно, нетривиален. Детерминант накладывает аксиоматичный интеграл Фурье. Число е позитивно соответствует нормальный бином Ньютона. Доказательство решительно позиционирует неопровержимый разрыв функции.",
+      "url": "http://gamma.duotek.ru",
+      "contact_email": "info3@duotek.ru",
+      "contact_phone": null,
+      "contact_telegram": null,
+      "contact_whatsapp": null,
+      "contact_skype": null,
+      "staff": 11,
+      "age": 32,
+      "city_id": 1,
+      "city": {
+        "id": 1,
+        "ident": "moskva",
+        "title": "Москва",
+        "country_id": 1
+      },
+      "country_id": 1,
+      "country": { "id": 1, "ident": "ru", "title": "Россия" },
+      "user_id": 1,
+      "industries": [],
+      "companySpecializations": [
+        {
+          "id": 3,
+          "ident": "dev-soft",
+          "title": "Разработка ПО",
+          "icon": "soft",
+          "company_specialization_group_id": 2
+        }
+      ],
+      "picture": "http://api-test.duotek.ru/company-logo.png",
+      "created_at": 1625224771,
+      "updated_at": 1625224771
+    }
+  ],
+  "meta": { "current_page": 1, "per_page": "10", "last_page": 2, "total": 15 }
+}

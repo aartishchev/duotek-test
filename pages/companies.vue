@@ -38,7 +38,13 @@
 </template>
 
 <script>
-export default {}
+import companies from '@/static/companies.json'
+
+export default {
+  asyncData() {
+    return companies
+  }
+}
 </script>
 
 <style lang="scss">
