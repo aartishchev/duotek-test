@@ -11,13 +11,11 @@
         <button class="companies__search-button">Найти</button>
       </form>
       <ul>
-        <li class="companies__list-item">
-          <h2 class="companies__item-title">Компания</h2>
-          <p class="companies__item-description">Описание</p>
-        </li>
-        <ul>
-          <li class="companies__item-label">Лейбл</li>
-        </ul>
+        <CompanyListItem
+          v-for="company in data"
+          :key="company.id"
+          :company="company"
+        />
       </ul>
     </section>
     <form class="companies__filter">
@@ -39,10 +37,20 @@
 
 <script>
 import companies from '@/static/companies.json'
+import CompanyListItem from '@/components/CompanyListItem.vue'
 
 export default {
+  components: {
+    CompanyListItem,
+  },
   asyncData() {
-    return companies
+    return { companies }
+  },
+  data() {
+    return {
+      data: companies.data,
+      meta: companies.meta,
+    }
   }
 }
 </script>
@@ -127,31 +135,5 @@ export default {
 }
 
 .companies__filter-label {
-}
-
-.companies__list-item {
-  padding: 0 52px 0 0;
-}
-
-.companies__item-title {
-  font-size: var(--text-xl);
-  line-height: 1;
-  font-weight: normal;
-  color: var(--blue-primary);
-}
-
-.companies__item-description {
-  font-size: var(--text-small);
-  line-height: 1.5;
-  color: var(--gray-51);
-}
-
-.companies__item-label {
-  font-size: var(--text-small);
-  line-height: 1.4;
-  letter-spacing: 0.12px;
-  padding: 5px 22px 7px 22px;
-  background-color: var(--gray-247);
-  border-radius: var(--radius-chip);
 }
 </style>
