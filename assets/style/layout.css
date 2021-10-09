@@ -12,5 +12,5 @@
   --radius-chip: 200px;
 
   --on-hover-opacity: 0.3;
-  --opacity-transition: opacity 0.2s ease;
+  --transition-ease: all 0.2s ease;
 }

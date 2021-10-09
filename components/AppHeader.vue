@@ -65,7 +65,7 @@ export default {}
 .header__nav-link {
   color: var(--blue-primary);
   padding: 8px;
-  transition: var(--opacity-transition);
+  transition: var(--transition-ease);
 
   &:hover {
     opacity: var(--on-hover-opacity);

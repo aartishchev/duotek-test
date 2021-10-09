@@ -85,7 +85,7 @@ export default {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url('@/assets/images/search-icon.svg');
+    background: url('@/assets/images/search-icon.svg') no-repeat;
     top: 7px;
     left: 11px;
   }
@@ -120,7 +120,7 @@ export default {
   color: white;
   border-top-right-radius: var(--radius-primary);
   border-bottom-right-radius: var(--radius-primary);
-  transition: var(--opacity-transition);
+  transition: var(--transition-ease);
 
   &:hover {
     opacity: var(--on-hover-opacity);

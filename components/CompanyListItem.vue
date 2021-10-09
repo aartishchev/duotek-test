@@ -45,9 +45,34 @@ export default {
   min-height: 200px;
   padding: 40px 52px 32px 9px;
   box-sizing: border-box;
+  position: relative;
+  transition: var(--transition-ease);
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background: url('@/assets/images/arrow-icon.svg') no-repeat;
+    right: 15px;
+    bottom: 18px;
+    visibility: hidden;
+  }
 
   &:hover {
     background-color: var(--gray-247);
+  }
+
+  &:hover .companies__title {
+    color: var(--alert-primary);
+  }
+
+  &:hover .companies__label {
+    background-color: white;
+  }
+
+  &:hover::before {
+    visibility: visible;
   }
 }
 
