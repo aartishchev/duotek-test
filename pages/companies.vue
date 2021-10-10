@@ -10,6 +10,7 @@
         />
         <button class="companies__search-button">Найти</button>
       </form>
+
       <ul>
         <CompanyListItem
           v-for="company in data"
@@ -18,18 +19,37 @@
         />
       </ul>
     </section>
+
     <form class="companies__filter">
-      <label class="companies__filter-label" for="branch-select">
+      <label
+        class="companies__filter-label"
+        for="branch-select"
+      >
         Отрасль
       </label>
-      <select id="branch-select" name="branch-filter">
-        <option value="" selected>Все отрасли</option>
+      <select
+        id="branch-select"
+        name="branch-filter"
+      >
+        <option
+          value=""
+          selected
+        >Все отрасли</option>
       </select>
-      <label class="companies__filter-label" for="branch-select">
+      <label
+        class="companies__filter-label"
+        for="branch-select"
+      >
         Специализация
       </label>
-      <select id="specialization-select" name="specialization-filter">
-        <option value="" selected>Все специализации</option>
+      <select
+        id="specialization-select"
+        name="specialization-filter"
+      >
+        <option
+          value=""
+          selected
+        >Все специализации</option>
       </select>
     </form>
   </main>
@@ -41,7 +61,7 @@ import CompanyListItem from '@/components/CompanyListItem.vue'
 
 export default {
   components: {
-    CompanyListItem,
+    CompanyListItem
   },
   asyncData() {
     return { companies }
@@ -49,7 +69,7 @@ export default {
   data() {
     return {
       data: companies.data,
-      meta: companies.meta,
+      meta: companies.meta
     }
   }
 }
@@ -60,7 +80,7 @@ export default {
 
 .companies__page {
   @include centering-layout;
-  padding-top: 75px;
+  @include page-positioning;
   font-family: var(--font-rubik);
   display: grid;
   grid-template-columns: 1fr auto;
