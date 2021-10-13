@@ -2,28 +2,30 @@
   <main class="company__page">
     <h1 class="company__heading">{{ company.title }}</h1>
 
-    <section>
-      <h2 class="company__description-section">Описание компании</h2>
+    <section class="company__description-section">
+      <h2 class="company__description-heading">Описание компании</h2>
+
       <div class="company__stat-wrapper">
-        <p class="company__stat-number">
-          {{ company.age }}
-          <sup class="company__stat-sup">лет</sup>
-        </p>
-        <p class="company__stat-number">
-          {{ company.staff }}
-          <sup class="company__stat-sup">человек</sup>
-        </p>
+        <p class="company__stat-number">{{ company.age }}</p>
+        <sup class="company__stat-sup">лет</sup>
+        <p class="company__stat-number">{{ company.staff }}</p>
+        <sup class="company__stat-sup">человек</sup>
       </div>
-      <p>
+
+      <p class="company__description-short">
         {{ company.description_short }}
       </p>
-      <p>
+
+      <p class="company__description-full">
         {{ company.description_full }}
       </p>
     </section>
 
-    <section v-if="company.companySpecializations.length > 0">
-      <h2>Проектная Специализация</h2>
+    <section
+      v-if="company.companySpecializations.length > 0"
+      class="company__specializations-section"
+    >
+      <h2 class="company__specialization-heading">Проектная cпециализация</h2>
       <ul class="company__info-chips-list">
         <li
           v-for="specialization in company.companySpecializations"
@@ -35,8 +37,11 @@
       </ul>
     </section>
 
-    <section v-if="company.industries.length > 0">
-      <h2>Технологии</h2>
+    <section
+      v-if="company.industries.length > 0"
+      class="company__industries-section"
+    >
+      <h2 class="company__industries-heading">Технологии</h2>
       <ul class="company__info-chips-list">
         <li
           v-for="industry in company.industries"
@@ -48,7 +53,10 @@
       </ul>
     </section>
 
-    <NuxtLink to="/companies" class="company__back-button">Компании</NuxtLink>
+    <NuxtLink to="/companies" class="company__back-button">
+      <img src="@/assets/images/arrow-icon-left.svg" alt="Вернуться назад" />
+      <span>Компании</span>
+    </NuxtLink>
   </main>
 </template>
 
@@ -77,13 +85,18 @@ export default {
   @include page-heading;
 }
 
-.company__description-section {
+.company__description-section,
+.company__specializations-section {
+  margin-bottom: 40px;
+}
+
+.company__description-heading {
   @include sr-only;
 }
 
 .company__stat-wrapper {
   display: flex;
-  column-gap: 20px;
+  margin-bottom: 10px;
 }
 
 .company__stat-number {
@@ -100,6 +113,28 @@ export default {
   line-height: 1;
   font-weight: normal;
   letter-spacing: normal;
+  padding-top: 8px;
+}
+
+.company__description-short {
+  color: var(--gray-51);
+  font-size: var(--text-large);
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.company__description-full {
+  color: var(--gray-51);
+  font-size: var(--text-small);
+  line-height: 1.5;
+}
+
+.company__specialization-heading,
+.company__industries-heading {
+  color: var(--gray-51);
+  font-size: var(--text-large);
+  line-height: 1;
+  margin-bottom: 24px;
 }
 
 .company__info-chips-list {
@@ -108,10 +143,25 @@ export default {
 
 .company__info-chip {
   @include info-chip;
+  color: var(--gray-72);
 }
 
 .company__back-button {
   position: absolute;
-  top: 0;
+  top: 39px;
+  display: flex;
+  align-items: center;
+  column-gap: 11px;
+  color: var(--blue-primary);
+  transition: var(--transition-ease);
+
+  & span {
+    font-size: var(--text-small);
+    line-height: 1;
+  }
+
+  &:hover {
+    opacity: var(--on-hover-opacity);
+  }
 }
 </style>

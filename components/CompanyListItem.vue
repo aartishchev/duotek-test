@@ -2,7 +2,7 @@
   <component :is="tag" class="companies__item">
     <NuxtLink :to="company.ident" class="companies__item-link">
       <img :src="company.picture" alt="Логотип компании" />
-      <div class="companies__info-wrapper">
+      <div>
         <h2 class="companies__title">{{ company.title }}</h2>
         <p class="companies__description">{{ company.description_short }}</p>
         <ul class="companies__info-chips-list">
@@ -54,7 +54,7 @@ export default {
     width: 24px;
     height: 24px;
     position: absolute;
-    background: url('@/assets/images/arrow-icon.svg') no-repeat;
+    background: url('@/assets/images/arrow-icon-right.svg') no-repeat;
     right: 15px;
     bottom: 18px;
     display: none;
@@ -68,7 +68,7 @@ export default {
     color: var(--alert-primary);
   }
 
-  &:hover .companies__label {
+  &:hover .companies__info-chip {
     background-color: white;
   }
 
@@ -104,5 +104,6 @@ export default {
 
 .companies__info-chip {
   @include info-chip;
+  color: var(--gray-51);
 }
 </style>
