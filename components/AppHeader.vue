@@ -13,10 +13,14 @@
             <NuxtLink to="/tenders" class="header__nav-link">Тендеры</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/companies" class="header__nav-link">Компании</NuxtLink>
+            <NuxtLink to="/companies" class="header__nav-link">
+              Компании
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/products" class="header__nav-link">Продукты</NuxtLink>
+            <NuxtLink to="/products" class="header__nav-link">
+              Продукты
+            </NuxtLink>
           </li>
           <li>
             <NuxtLink to="/cases" class="header__nav-link">Кейсы</NuxtLink>
@@ -28,7 +32,9 @@
       </nav>
 
       <p class="header__login">
-        <NuxtLink to="/login" class="header__nav-link">Вход и регистрация</NuxtLink>
+        <NuxtLink to="/login" class="header__nav-link"
+          >Вход и регистрация</NuxtLink
+        >
       </p>
     </div>
   </header>
@@ -67,7 +73,8 @@ export default {}
   padding: 8px;
   transition: var(--transition-ease);
 
-  &:hover {
+  &:hover,
+  &.nuxt-link-active {
     opacity: var(--on-hover-opacity);
   }
 }

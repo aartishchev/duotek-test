@@ -27,3 +27,19 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+@mixin info-chip {
+  font-size: var(--text-small);
+  line-height: 1.4;
+  color: var(--gray-51);
+  letter-spacing: 0.12px;
+  padding: 5px 22px 7px 22px;
+  background-color: var(--gray-247);
+  border-radius: var(--radius-chip);
+}
+
+@mixin info-chips-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4px;
+}

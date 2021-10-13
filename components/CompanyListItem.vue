@@ -1,24 +1,15 @@
 <template>
-  <component
-    :is="tag"
-    class="companies__item"
-  >
-    <NuxtLink
-      :to="company.ident"
-      class="companies__item-link"
-    >
-      <img
-        :src="company.picture"
-        alt="Логотип компании"
-      />
+  <component :is="tag" class="companies__item">
+    <NuxtLink :to="company.ident" class="companies__item-link">
+      <img :src="company.picture" alt="Логотип компании" />
       <div class="companies__info-wrapper">
         <h2 class="companies__title">{{ company.title }}</h2>
         <p class="companies__description">{{ company.description_short }}</p>
-        <ul class="companies__label-list">
+        <ul class="companies__info-chips-list">
           <li
             v-for="specialization in companySpecializations"
             :key="specialization.id"
-            class="companies__label"
+            class="companies__info-chip"
           >
             {{ specialization.title }}
           </li>
@@ -33,22 +24,24 @@ export default {
   props: {
     tag: {
       type: String,
-      default: 'li'
+      default: 'li',
     },
     company: {
       type: Object,
-      required: true
+      required: true,
     }
   },
   data() {
     return {
-      companySpecializations: this.company.companySpecializations
+      companySpecializations: this.company.companySpecializations,
     }
-  }
+  },
 }
 </script>
 
 <style lang="scss">
+@import '@/assets/style/mixins.scss';
+
 .companies__item {
   min-height: 200px;
   padding: 40px 52px 32px 9px;
@@ -64,7 +57,7 @@ export default {
     background: url('@/assets/images/arrow-icon.svg') no-repeat;
     right: 15px;
     bottom: 18px;
-    visibility: hidden;
+    display: none;
   }
 
   &:hover {
@@ -80,7 +73,7 @@ export default {
   }
 
   &:hover::before {
-    visibility: visible;
+    display: block;
   }
 }
 
@@ -105,19 +98,11 @@ export default {
   margin-bottom: 16px;
 }
 
-.companies__label-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 4px;
+.companies__info-chips-list {
+  @include info-chips-list;
 }
 
-.companies__label {
-  font-size: var(--text-small);
-  line-height: 1.4;
-  color: var(--gray-51);
-  letter-spacing: 0.12px;
-  padding: 5px 22px 7px 22px;
-  background-color: var(--gray-247);
-  border-radius: var(--radius-chip);
+.companies__info-chip {
+  @include info-chip;
 }
 </style>

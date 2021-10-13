@@ -22,18 +22,34 @@
       </p>
     </section>
 
-    <h2>Проектная Специализация</h2>
+    <section v-if="company.companySpecializations.length > 0">
+      <h2>Проектная Специализация</h2>
+      <ul class="company__info-chips-list">
+        <li
+          v-for="specialization in company.companySpecializations"
+          :key="specialization.id"
+          class="company__info-chip"
+        >
+          {{ specialization.title }}
+        </li>
+      </ul>
+    </section>
 
-    <h2>Технологии</h2>
+    <section v-if="company.industries.length > 0">
+      <h2>Технологии</h2>
+      <ul class="company__info-chips-list">
+        <li
+          v-for="industry in company.industries"
+          :key="industry.id"
+          class="company__info-chip"
+        >
+          {{ industry.title }}
+        </li>
+      </ul>
+    </section>
 
-    <NuxtLink
-      to="/companies"
-      class="company__back-button"
-    >
-      Компании
-    </NuxtLink>
+    <NuxtLink to="/companies" class="company__back-button">Компании</NuxtLink>
   </main>
-
 </template>
 
 <script>
@@ -43,7 +59,7 @@ export default {
   asyncData({ params }) {
     const company = companies.data.find((el) => el.ident === params.company)
     return { company }
-  }
+  },
 }
 </script>
 
@@ -84,6 +100,14 @@ export default {
   line-height: 1;
   font-weight: normal;
   letter-spacing: normal;
+}
+
+.company__info-chips-list {
+  @include info-chips-list;
+}
+
+.company__info-chip {
+  @include info-chip;
 }
 
 .company__back-button {
